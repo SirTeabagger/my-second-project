@@ -2,16 +2,157 @@
 
 #Task 1
 
-num_1 = int(input("Enter the first number: "))
-num_2 = int(input("Enter the second number: "))
+#num_1 = int(input("Enter the first number: "))
+#num_2 = int(input("Enter the second number: "))
 
-sum = num_1 + num_2
-print(sum)
-dif = num_1 - num_2
-print(dif)
-product = num_1 * num_2
-print(product)
-div = num_1/num_2
-print(div)
-mod = num_1%num_2
-print(mod)
+#sum = num_1 + num_2
+#print(sum)
+#dif = num_1 - num_2
+#print(dif)
+#product = num_1 * num_2
+#print(product)
+#div = num_1/num_2
+#print(div)
+#mod = num_1%num_2
+#print(mod)
+
+#Task 2
+
+t2_num1 = int(input("Enter the first number: "))
+t2_num2 = int(input("Enter the second number to compare: "))
+
+if t2_num1 == t2_num2:
+	print("The numbers are equal:")
+# Check if the first number is greater than or equal to the second number
+elif t2_num1 >= t2_num2:
+    if t2_num1 > t2_num2:
+        print("The first number is bigger.")
+    else:
+        print("The first number is bigger or equal to the second.")
+# Check if the second number is greater than or equal to the first number
+elif t2_num2 >= t2_num1:
+    if t2_num2 > t2_num1:
+        print("The second number is bigger.")
+    else:
+        print("The second number is bigger or equal to the first.")
+
+
+#Task 3
+
+
+t3_bool1 = input("Enter the first number: ")
+t3_bool2 = input("Enter the second number to compare: ")
+
+
+bool1 = t3_bool1 == "True"
+bool2 = t3_bool2 == "True"
+
+and_res = bool1 and bool2
+or_res = bool1 or bool2
+not_bool1 = not bool1
+not_bool2 = not bool2
+
+print(f"{bool1} and {bool2} = {and_res}")
+print("Explanation: 'and' returns True if both values are True, otherwise False.")
+
+print(f"{bool1} or {bool2} = {or_res}")
+print("Explanation: 'or' returns True if at least one of the values is True, otherwise False.")
+
+print(f"not {bool1} = {not_bool1}")
+print(f"not {bool2} = {not_bool2}")
+print("Explanation: 'not' returns True if the value is False, and False if the value is True.")
+
+#Task 4
+
+input_string = input("Enter a string: ")
+input_integer = int(input("Enter an integer: "))
+
+# Concatenate the string with itself using the + operator
+concatenated_string = input_string + input_string
+print(f"Concatenating the string with itself: {concatenated_string}")
+
+# Repeat the string a specified number of times using the * operator
+repeated_string = input_string * input_integer
+print(f"Repeating the string {input_integer} times: {repeated_string}")
+
+
+#Task 5
+
+base = float(input("Enter the base value: "))
+exponent = float(input("Enter the exponent value: "))
+
+# Calculate the power
+power_result = base ** exponent
+print(f"The result of {base} raised to the power of {exponent} is: {power_result}")
+
+# Calculate square root using 0.5 as the exponent
+square_root = base ** 0.5
+print(f"The square root of {base} is: {square_root}")
+
+# For general root calculation, ask the user for the root degree
+root_degree = float(input("Enter the degree of the root to calculate (e.g., 3 for cube root): "))
+root_result = base ** (1 / root_degree)
+print(f"The {root_degree}-root of {base} is: {root_result}")
+
+#Task 6
+
+# Request integer inputs from the user
+num1 = int(input("Enter the first integer: "))
+num2 = int(input("Enter the second integer: "))
+
+# Perform bitwise operations
+and_result = num1 & num2
+or_result = num1 | num2
+xor_result = num1 ^ num2
+not_num1 = ~num1
+left_shift_num1 = num1 << 2  # Shift left by 2 bits
+right_shift_num1 = num1 >> 2  # Shift right by 2 bits
+
+# Display the results and explanations
+print(f"{num1} & {num2} = {and_result} (AND: both bits are 1, result is 1)")
+print(f"{num1} | {num2} = {or_result} (OR: either bit is 1, result is 1)")
+print(f"{num1} ^ {num2} = {xor_result} (XOR: bits different, result is 1)")
+print(f"~{num1} = {not_num1} (NOT: inverts the bits)")
+print(f"{num1} << 2 = {left_shift_num1} (Left shift: shifts bits to the left by 2, fills with 0s)")
+print(f"{num1} >> 2 = {right_shift_num1} (Right shift: shifts bits to the right by 2, fills with sign bit)")
+
+#Task 7 In-Place operators
+
+t7_num = int(input("Please enter a number: "))
+
+#in place operators
+
+t7_num+=2
+incr = t7_num
+t7_num-=2
+decr = t7_num
+t7_num*=2
+mult = t7_num
+t7_num/=2
+div = t7_num
+t7_num%=2
+mod = t7_num
+#printing the results
+
+print(f"The result of the 1st in place operator is {incr}")
+print(f"The result of the 2nd in place operator is {decr}")
+print(f"The result of the 3rd in place operator is {mult}")
+print(f"The result of the 4th in place operator is {div}")
+print(f"The result of the 5th in place operator is {mod}")
+
+
+#Task 8
+
+val1 = 10
+val2 = 3
+
+# Regular division
+regular_division_result = val1 / val2
+
+# Floor division
+floor_division_result = val1 // val2
+
+# Print the results
+print(f"Regular division of {val1} by {val2} is {regular_division_result} (floating point result).")
+print(f"Floor division of {val1} by {val2} is {floor_division_result} (integer result, rounded down).")
+
